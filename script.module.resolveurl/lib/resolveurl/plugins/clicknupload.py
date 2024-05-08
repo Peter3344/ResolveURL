@@ -17,6 +17,7 @@
 """
 
 import re
+from resolveurl.lib.comaddon import VSlog
 from resolveurl.lib import helpers
 from resolveurl.lib import captcha_lib
 from resolveurl import common
@@ -31,7 +32,7 @@ class ClickNUploadResolver(ResolveUrl):
     domains = ['clicknupload.to', 'clicknupload.cc', 'clicknupload.co', 'clicknupload.com',
                'clicknupload.me', 'clicknupload.link', 'clicknupload.red', 'clicknupload.org',
                'clicknupload.club', 'clicknupload.click', 'clicknupload.download',
-               'clicknupload.vip', 'clickndownload.org', 'clicknupload.space']
+               'clicknupload.vip', 'clickndownload.org', 'clicknupload.space', 'clickndownload.click']
     pattern = r'(?://|\.)(clickn(?:up|down)load\.(?:com?|me|link|org|cc|club|to|red|click|download|vip|space))/(?:f/)?([0-9A-Za-z]+)'
 
     def get_media_url(self, host, media_id):
